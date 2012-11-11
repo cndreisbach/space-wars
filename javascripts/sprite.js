@@ -62,11 +62,11 @@
     return proxy;
   };
  
-  window.Sprite = function(name, callback) {
-    return Sprite.load(Sprite.spriteImagePath + name + ".png", callback);
-  };
+  var spriteImagePath = "https://raw.github.com/crnixon/space-wars/master/images/";
 
-  window.Sprite.spriteImagePath = 'images/';
+  window.Sprite = function(name, callback) {
+    return Sprite.load(spriteImagePath + name + ".png", callback);
+  };
   window.Sprite.EMPTY = LoaderProxy();
   window.Sprite.load = Sprite.load;
 }());
