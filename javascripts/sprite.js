@@ -63,9 +63,9 @@
   };
  
   window.Sprite = function(name, callback) {
-    return Sprite.load(this.spriteImagePath + name + ".png", callback);
+    return Sprite.load(Sprite.spriteImagePath + name + ".png", callback);
   };
-  
+
   window.Sprite.spriteImagePath = 'images/';
   window.Sprite.EMPTY = LoaderProxy();
   window.Sprite.load = Sprite.load;
